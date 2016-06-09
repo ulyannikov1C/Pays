@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сумма</dataPath>
+				<field>Сумма</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество1</dataPath>
+				<field>Количество1</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество1</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество2</dataPath>
+				<field>Количество2</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество2</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество3</dataPath>
+				<field>Количество3</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество3</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество4</dataPath>
+				<field>Количество4</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество4</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество5</dataPath>
+				<field>Количество5</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество5</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество6</dataPath>
+				<field>Количество6</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество6</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодОП</dataPath>
+				<field>КодОП</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Код ОП</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Поле1</dataPath>
+				<field>Поле1</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Поле1</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Поле2</dataPath>
+				<field>Поле2</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Поле2</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Поле3</dataPath>
+				<field>Поле3</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Поле3</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПлатежа</dataPath>
+				<field>СуммаПлатежа</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма платежа</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПлатежа2</dataPath>
+				<field>СуммаПлатежа2</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма платежа2</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаСКомиссией1</dataPath>
+				<field>СуммаСКомиссией1</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма с комиссией1</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаСКомиссиями1</dataPath>
+				<field>СуммаСКомиссиями1</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма с комиссиями1</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ТорговыеТочки.Ссылка КАК КодОП
+ПОМЕСТИТЬ ВТТочки
+ИЗ
+	Справочник.ТорговыеТочки КАК ТорговыеТочки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПриемПлатежей.КодТТ,
+	СУММА(ПриемПлатежей.СуммаПлатежа) КАК СуммаПлатежа,
+	СУММА(ПриемПлатежей.Количество) КАК Количество
+ПОМЕСТИТЬ ВТПлатежиЛП
+ИЗ
+	Документ.ПриемПлатежей КАК ПриемПлатежей
+ГДЕ
+	ПриемПлатежей.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаС, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаПо, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	ПриемПлатежей.КодТТ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПлатежиВКиберплате.КодТТ,
+	СУММА(ПлатежиВКиберплате.СуммаПлатежа) КАК СуммаПлатежа,
+	СУММА(ПлатежиВКиберплате.Количество) КАК Количество
+ПОМЕСТИТЬ ВТПлатКиберК
+ИЗ
+	Документ.ПлатежиВКиберплате КАК ПлатежиВКиберплате
+ГДЕ
+	ПлатежиВКиберплате.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаС, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаПо, ДЕНЬ)
+	И (НЕ ПлатежиВКиберплате.Провайдер В ИЕРАРХИИ (&amp;Пров1))
+
+СГРУППИРОВАТЬ ПО
+	ПлатежиВКиберплате.КодТТ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПлатежиВМТСБ.Точка КАК КодТТ,
+	СУММА(ПлатежиВМТСБ.Суммазачисленная) КАК СуммаПлатежа,
+	СУММА(ПлатежиВМТСБ.Количество) КАК Количество
+ПОМЕСТИТЬ ВТПлатКиберР
+ИЗ
+	Документ.ПлатежиВМТСБ КАК ПлатежиВМТСБ
+ГДЕ
+    ПлатежиВМТСБ.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаС, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаПо, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	ПлатежиВМТСБ.Точка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПриемПлатежейЗК.КодТТ,
+	СУММА(ПриемПлатежейЗК.СуммаСКомиссиями) КАК СуммаСКомиссиями,
+	СУММА(ПриемПлатежейЗК.Количество) КАК Количество
+ПОМЕСТИТЬ ВТПереводыЛП
+ИЗ
+	Документ.ПриемПлатежейЗК КАК ПриемПлатежейЗК
+ГДЕ
+	ПриемПлатежейЗК.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаС, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаПо, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	ПриемПлатежейЗК.КодТТ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЗолотаяКоронаВПС.КодТТ,
+	СУММА(ЗолотаяКоронаВПС.СуммаСКомиссиями) КАК СуммаСКомиссиями,
+	СУММА(ЗолотаяКоронаВПС.Количество) КАК Количество
+ПОМЕСТИТЬ ВТПереводыПС
+ИЗ
+	Документ.ЗолотаяКоронаВПС КАК ЗолотаяКоронаВПС
+ГДЕ
+	ЗолотаяКоронаВПС.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаС, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаПо, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	ЗолотаяКоронаВПС.КодТТ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПогашенияКредитовЛП.КодТТ,
+	СУММА(ПогашенияКредитовЛП.СуммаСКомиссией) КАК СуммаСКомиссией,
+	СУММА(ПогашенияКредитовЛП.Количество) КАК Количество
+ПОМЕСТИТЬ ВТКредитыЛП
+ИЗ
+	Документ.ПогашенияКредитовЛП КАК ПогашенияКредитовЛП
+ГДЕ
+	ПогашенияКредитовЛП.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаС, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаПо, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	ПогашенияКредитовЛП.КодТТ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПогашенияКредитовПС.КодТТ,
+	СУММА(ПогашенияКредитовПС.СуммаСКомиссией) КАК СуммаСКомиссией,
+	СУММА(ПогашенияКредитовПС.Количество) КАК Количество
+ПОМЕСТИТЬ ВТКредитыПС
+ИЗ
+	Документ.ПогашенияКредитовПС КАК ПогашенияКредитовПС
+ГДЕ
+	ПогашенияКредитовПС.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаС, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаПо, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	ПогашенияКредитовПС.КодТТ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТТочки.КодОП КАК КодОП,
+	ЕСТЬNULL(ВТПлатежиЛП.Количество, 0) КАК Поле1,
+	ЕСТЬNULL(ВТПлатежиЛП.СуммаПлатежа, 0) КАК Сумма,
+	ЕСТЬNULL(ВТПлатКиберК.Количество, 0) КАК Количество1,
+	ЕСТЬNULL(ВТПлатКиберК.СуммаПлатежа, 0) КАК СуммаПлатежа,
+	ЕСТЬNULL(ВТПлатКиберР.Количество, 0) КАК Количество2,
+	ЕСТЬNULL(ВТПлатКиберР.СуммаПлатежа, 0) КАК СуммаПлатежа2,
+	ЕСТЬNULL(ВТПереводыЛП.Количество, 0) КАК Количество3,
+	ЕСТЬNULL(ВТПереводыЛП.СуммаСКомиссиями, 0) КАК Поле2,
+	ЕСТЬNULL(ВТПереводыПС.Количество, 0) КАК Количество4,
+	ЕСТЬNULL(ВТПереводыПС.СуммаСКомиссиями, 0) КАК СуммаСКомиссиями1,
+	ЕСТЬNULL(ВТКредитыЛП.Количество, 0) КАК Количество5,
+	ЕСТЬNULL(ВТКредитыЛП.СуммаСКомиссией, 0) КАК Поле3,
+	ЕСТЬNULL(ВТКредитыПС.Количество, 0) КАК Количество6,
+	ЕСТЬNULL(ВТКредитыПС.СуммаСКомиссией, 0) КАК СуммаСКомиссией1
+ИЗ
+	ВТТочки КАК ВТТочки
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПлатКиберК КАК ВТПлатКиберК
+		ПО ВТТочки.КодОП = ВТПлатКиберК.КодТТ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПлатКиберР КАК ВТПлатКиберР
+		ПО ВТТочки.КодОП = ВТПлатКиберР.КодТТ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПереводыЛП КАК ВТПереводыЛП
+		ПО ВТТочки.КодОП = ВТПереводыЛП.КодТТ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПереводыПС КАК ВТПереводыПС
+		ПО ВТТочки.КодОП = ВТПереводыПС.КодТТ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТКредитыЛП КАК ВТКредитыЛП
+		ПО ВТТочки.КодОП = ВТКредитыЛП.КодТТ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТКредитыПС КАК ВТКредитыПС
+		ПО ВТТочки.КодОП = ВТКредитыПС.КодТТ
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПлатежиЛП КАК ВТПлатежиЛП
+		ПО ВТТочки.КодОП = ВТПлатежиЛП.КодТТ
+ГДЕ
+	ВТТочки.КодОП.ПометкаУдаления = ЛОЖЬ
+	И ВТТочки.КодОП.Состояние &lt;&gt; "Закрыта"
+	И ВТТочки.КодОП.ЭтоГруппа = ЛОЖЬ
+	И (ВТПлатежиЛП.СуммаПлатежа &lt;&gt; 0
+			ИЛИ ВТПлатежиЛП.Количество &lt;&gt; 0
+			ИЛИ ВТПлатКиберК.СуммаПлатежа &lt;&gt; 0
+			ИЛИ ВТПлатКиберК.Количество &lt;&gt; 0
+			ИЛИ ВТПлатКиберР.Количество &lt;&gt; 0
+			ИЛИ ВТПлатКиберР.СуммаПлатежа &lt;&gt; 0
+			ИЛИ ВТПереводыЛП.СуммаСКомиссиями &lt;&gt; 0
+			ИЛИ ВТПереводыЛП.Количество &lt;&gt; 0
+			ИЛИ ВТПереводыПС.СуммаСКомиссиями &lt;&gt; 0
+			ИЛИ ВТПереводыПС.Количество &lt;&gt; 0
+			ИЛИ ВТКредитыЛП.СуммаСКомиссией &lt;&gt; 0
+			ИЛИ ВТКредитыЛП.Количество &lt;&gt; 0
+			ИЛИ ВТКредитыПС.СуммаСКомиссией &lt;&gt; 0
+			ИЛИ ВТКредитыПС.Количество &lt;&gt; 0)
+
+УПОРЯДОЧИТЬ ПО
+	КодОП</query>
+		</dataSet>
+		<totalField>
+			<dataPath>Количество1</dataPath>
+			<expression>Сумма(Количество1)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Количество2</dataPath>
+			<expression>Сумма(Количество2)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Количество3</dataPath>
+			<expression>Сумма(Количество3)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Количество4</dataPath>
+			<expression>Сумма(Количество4)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Количество5</dataPath>
+			<expression>Сумма(Количество5)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Количество6</dataPath>
+			<expression>Сумма(Количество6)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Поле1</dataPath>
+			<expression>Сумма(Поле1)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Поле2</dataPath>
+			<expression>Сумма(Поле2)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Поле3</dataPath>
+			<expression>Сумма(Поле3)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Сумма</dataPath>
+			<expression>Сумма(Сумма)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаПлатежа</dataPath>
+			<expression>Сумма(СуммаПлатежа)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаПлатежа2</dataPath>
+			<expression>Сумма(СуммаПлатежа2)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаСКомиссией1</dataPath>
+			<expression>Сумма(СуммаСКомиссией1)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаСКомиссиями1</dataPath>
+			<expression>Сумма(СуммаСКомиссиями1)</expression>
+		</totalField>
+		<parameter>
+			<name>ДатаС</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ДатаПо</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>Пров1</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Пров1</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Номенклатура</Type>
+			</valueType>
+			<value xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xsi:type="dcscor:DesignTimeValue">Справочник.Номенклатура.ПустаяСсылка</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платежи(ЛП)</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Поле1</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Сумма</field>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Киберплат</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Количество1</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаПлатежа</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>МТС Банк</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Количество2</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаПлатежа2</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переводы(ЛП)</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Количество3</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Поле2</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переводы(ПС)</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Количество4</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаСКомиссиями1</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредиты(ЛП)</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Количество5</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Поле3</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредиты(ПС)</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Количество6</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаСКомиссией1</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ДатаПо</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.Провайдеры.ПустаяСсылка</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>МакетОформления</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+			<dcscor:value xsi:type="v8ui:ChartType">Column3D</dcscor:value>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТипДиаграммы.Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="MS Serif" height="9" kind="WindowsFont"/>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТипДиаграммы.ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#CCFFFF</dcscor:value>
+			</dcscor:item>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>КодОП</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:ChartType">Column3D</dcscor:value>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ТипДиаграммы.Шрифт</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ТипДиаграммы.ЦветФона</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">#CCFFFF</dcscor:value>
+				</dcscor:item>
+			</dcscor:item>
+		</outputParameters>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
