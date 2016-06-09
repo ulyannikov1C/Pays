@@ -16,6 +16,12 @@
 						<d5p1:content>Сумма</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ='10 000 000'; ЧДЦ=5</value>
+					</item>
+				</appearance>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Количество1</dataPath>
@@ -106,6 +112,12 @@
 						<d5p1:content>Поле2</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ='10 000 000'; ЧДЦ=5</value>
+					</item>
+				</appearance>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Поле3</dataPath>
@@ -116,6 +128,12 @@
 						<d5p1:content>Поле3</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ='10 000 000'; ЧДЦ=5</value>
+					</item>
+				</appearance>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаПлатежа</dataPath>
@@ -126,6 +144,12 @@
 						<d5p1:content>Сумма платежа</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ='10 000 000'; ЧДЦ=5</value>
+					</item>
+				</appearance>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаПлатежа2</dataPath>
@@ -136,6 +160,12 @@
 						<d5p1:content>Сумма платежа2</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ='10 000 000'; ЧДЦ=5</value>
+					</item>
+				</appearance>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаСКомиссией1</dataPath>
@@ -146,6 +176,12 @@
 						<d5p1:content>Сумма с комиссией1</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ='10 000 000'; ЧДЦ=5</value>
+					</item>
+				</appearance>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаСКомиссиями1</dataPath>
@@ -156,6 +192,12 @@
 						<d5p1:content>Сумма с комиссиями1</d5p1:content>
 					</d5p1:item>
 				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ='10 000 000'; ЧДЦ=5</value>
+					</item>
+				</appearance>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
