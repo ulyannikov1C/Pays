@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Дата</dataPath>
+				<field>Дата</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ID</dataPath>
+				<field>ID</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>IDЛП</dataPath>
+				<field>IDЛП</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>IDЛП</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номер</dataPath>
+				<field>Номер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаЛП</dataPath>
+				<field>ДатаЛП</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодТТ</dataPath>
+				<field>КодТТ</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодТТЛП</dataPath>
+				<field>КодТТЛП</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество</dataPath>
+				<field>Количество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоЛП</dataPath>
+				<field>КоличествоЛП</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НомерЛП</dataPath>
+				<field>НомерЛП</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПлатежа</dataPath>
+				<field>СуммаПлатежа</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПлатежаЛП</dataPath>
+				<field>СуммаПлатежаЛП</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Расхождение</dataPath>
+				<field>Расхождение</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ПлатежиВМТСБ.Точка КАК КодТТ,
+	ПлатежиВМТСБ.Номер,
+	ПлатежиВМТСБ.Дата,
+	ПлатежиВМТСБ.IDплатежа КАК ID,
+	ПлатежиВМТСБ.Принятаясумма КАК СуммаПлатежа,
+	ПлатежиВМТСБ.Количество,
+	ПриемПлатежей.КодТТ КАК КодТТЛП,
+	ПриемПлатежей.Номер КАК НомерЛП,
+	ПриемПлатежей.Дата КАК ДатаЛП,
+	ПриемПлатежей.ID КАК IDЛП,
+	ПриемПлатежей.СуммаПлатежа КАК СуммаПлатежаЛП,
+	ПриемПлатежей.Количество КАК КоличествоЛП,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ПлатежиВМТСБ.IDплатежа, 0) = 0
+				И ЕСТЬNULL(ПриемПлатежей.ID, 0) &lt;&gt; 0
+			ТОГДА "ЛП"
+		КОГДА ЕСТЬNULL(ПлатежиВМТСБ.IDплатежа, 0) &lt;&gt; 0
+				И ЕСТЬNULL(ПриемПлатежей.ID, 0) = 0
+			ТОГДА "Реестр"
+	КОНЕЦ КАК Расхождение
+ИЗ
+	Документ.ПлатежиВМТСБ КАК ПлатежиВМТСБ
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриемПлатежей КАК ПриемПлатежей
+		ПО ПлатежиВМТСБ.IDплатежа = ПриемПлатежей.ID
+ГДЕ
+	ПлатежиВМТСБ.Дата МЕЖДУ &amp;ДатаНач И &amp;ДатаКон</query>
+		</dataSet>
+		<parameter>
+			<name>ДатаКон</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата кон</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+			<inputParameters>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+					<parameter>БыстрыйВыбор</parameter>
+					<value xsi:type="xs:boolean">true</value>
+				</item>
+			</inputParameters>
+		</parameter>
+		<parameter>
+			<name>ДатаНач</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дата нач</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+			<inputParameters>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+					<parameter>БыстрыйВыбор</parameter>
+					<value xsi:type="xs:boolean">true</value>
+				</item>
+			</inputParameters>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>МТС Банк</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>КодТТ</field>
+			</item>
+			<item xsi:type="SelectedItemFolder">
+				<title>Реестр</title>
+				<item xsi:type="SelectedItemField">
+					<field>Дата</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>Номер</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ID</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаПлатежа</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>Количество</field>
+				</item>
+				<placement>SpecialColumn</placement>
+			</item>
+			<item xsi:type="SelectedItemFolder">
+				<title>Лист продаж</title>
+				<item xsi:type="SelectedItemField">
+					<use>false</use>
+					<field>КодТТЛП</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ДатаЛП</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>НомерЛП</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>IDЛП</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаПлатежаЛП</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КоличествоЛП</field>
+				</item>
+				<placement>SpecialColumn</placement>
+			</item>
+			<placement>Auto</placement>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ДатаКон</dcscor:parameter>
+			<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+			<userSettingID>ce341b17-06c6-42c6-baa5-75fdcb8ce8b0</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ДатаНач</dcscor:parameter>
+			<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+			<userSettingID>b8a5cbfc-e84a-4ce9-a0ef-f03b7e915691</userSettingID>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Расхождение</field>
+			<orderType>Desc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>КодТТ</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>КодТТЛП</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<conditionalAppearance>
+		<item>
+			<selection/>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Расхождение</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:string">ЛП</right>
+					<right xsi:type="xs:string">Реестр</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветФона</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">style:BorderColor</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+	</conditionalAppearance>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
