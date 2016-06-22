@@ -8,62 +8,52 @@
 		<dataSet xsi:type="DataSetQuery">
 			<name>НаборДанных1</name>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Дата</dataPath>
-				<field>Дата</field>
+				<dataPath>IDЛП1</dataPath>
+				<field>IDЛП1</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>ID</dataPath>
-				<field>ID</field>
+				<dataPath>ДатаЛП1</dataPath>
+				<field>ДатаЛП1</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>IDЛП</dataPath>
-				<field>IDЛП</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>IDЛП</d5p1:content>
-					</d5p1:item>
-				</title>
+				<dataPath>кID</dataPath>
+				<field>кID</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Номер</dataPath>
-				<field>Номер</field>
+				<dataPath>кДата</dataPath>
+				<field>кДата</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>ДатаЛП</dataPath>
-				<field>ДатаЛП</field>
+				<dataPath>кКодТТ</dataPath>
+				<field>кКодТТ</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>КодТТ</dataPath>
-				<field>КодТТ</field>
+				<dataPath>кКоличество</dataPath>
+				<field>кКоличество</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>КодТТЛП</dataPath>
-				<field>КодТТЛП</field>
+				<dataPath>кНомер</dataPath>
+				<field>кНомер</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Количество</dataPath>
-				<field>Количество</field>
+				<dataPath>КодТТЛП1</dataPath>
+				<field>КодТТЛП1</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>КоличествоЛП</dataPath>
-				<field>КоличествоЛП</field>
+				<dataPath>КоличествоЛП1</dataPath>
+				<field>КоличествоЛП1</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>НомерЛП</dataPath>
-				<field>НомерЛП</field>
+				<dataPath>кСуммаПлатежа</dataPath>
+				<field>кСуммаПлатежа</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>СуммаПлатежа</dataPath>
-				<field>СуммаПлатежа</field>
+				<dataPath>НомерЛП1</dataPath>
+				<field>НомерЛП1</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>СуммаПлатежаЛП</dataPath>
-				<field>СуммаПлатежаЛП</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>Расхождение</dataPath>
-				<field>Расхождение</field>
+				<dataPath>СуммаПлатежаЛП1</dataPath>
+				<field>СуммаПлатежаЛП1</field>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
@@ -87,12 +77,35 @@
 				И ЕСТЬNULL(ПриемПлатежей.ID, 0) = 0
 			ТОГДА "Реестр"
 	КОНЕЦ КАК Расхождение
+ПОМЕСТИТЬ ВТМТСБ
 ИЗ
 	Документ.ПлатежиВМТСБ КАК ПлатежиВМТСБ
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриемПлатежей КАК ПриемПлатежей
 		ПО ПлатежиВМТСБ.IDплатежа = ПриемПлатежей.ID
 ГДЕ
-	ПлатежиВМТСБ.Дата МЕЖДУ &amp;ДатаНач И &amp;ДатаКон</query>
+	ПлатежиВМТСБ.Дата МЕЖДУ &amp;ДатаНач И &amp;ДатаКон
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПлатежиВКиберплате.КодТТ КАК кКодТТ,
+	ПлатежиВКиберплате.Дата КАК кДата,
+	ПлатежиВКиберплате.Номер КАК кНомер,
+	ПлатежиВКиберплате.ID КАК кID,
+	ПлатежиВКиберплате.СуммаПлатежа КАК кСуммаПлатежа,
+	ПлатежиВКиберплате.Количество КАК кКоличество,
+	ПриемПлатежей.КодТТ КАК КодТТЛП1,
+	ПриемПлатежей.Дата КАК ДатаЛП1,
+	ПриемПлатежей.Номер КАК НомерЛП1,
+	ПриемПлатежей.ID КАК IDЛП1,
+	ПриемПлатежей.СуммаПлатежа КАК СуммаПлатежаЛП1,
+	ПриемПлатежей.Количество КАК КоличествоЛП1
+ИЗ
+	Документ.ПлатежиВКиберплате КАК ПлатежиВКиберплате
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриемПлатежей КАК ПриемПлатежей
+		ПО ПлатежиВКиберплате.ID = ПриемПлатежей.ID
+ГДЕ
+	ПлатежиВКиберплате.Дата МЕЖДУ &amp;ДатаНач И &amp;ДатаКон</query>
 		</dataSet>
 		<parameter>
 			<name>ДатаКон</name>
